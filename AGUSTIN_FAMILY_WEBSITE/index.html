@@ -1,0 +1,290 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AGUSTIN FAMILY WEBSITE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#1f2e1d",
+                        "tertiary": "#0b190a",
+                        "on-primary-fixed-variant": "#6d3731",
+                        "on-tertiary-fixed-variant": "#3b4b38",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#d5e8ce",
+                        "surface-container": "#f5ece7",
+                        "surface-tint": "#894e47",
+                        "surface": "#fff8f5",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#ffdad5",
+                        "on-primary-container": "#c48077",
+                        "surface-dim": "#e1d8d4",
+                        "primary-container": "#4a1c17",
+                        "surface-variant": "#e9e1dc",
+                        "on-primary-fixed": "#370d0a",
+                        "surface-bright": "#fff8f5",
+                        "surface-container-highest": "#e9e1dc",
+                        "background": "#fff8f5",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "inverse-surface": "#34302c",
+                        "inverse-primary": "#ffb4aa",
+                        "on-surface-variant": "#524341",
+                        "secondary-container": "#e5e2db",
+                        "on-secondary": "#ffffff",
+                        "primary": "#2f0805",
+                        "on-secondary-container": "#65645f",
+                        "on-tertiary-fixed": "#101f0f",
+                        "inverse-on-surface": "#f8efea",
+                        "on-background": "#1e1b18",
+                        "surface-container-high": "#efe6e2",
+                        "outline": "#857371",
+                        "secondary-fixed-dim": "#c9c6c0",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#859680",
+                        "secondary": "#5f5e59",
+                        "surface-container-low": "#fbf2ed",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#b9ccb3",
+                        "on-secondary-fixed": "#1c1c18",
+                        "on-secondary-fixed-variant": "#474742",
+                        "on-surface": "#1e1b18",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#e5e2db",
+                        "outline-variant": "#d7c2bf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-sm": ["Manrope"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-md": ["Manrope"],
+                        "label-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FCF9F2; /* Parchment Cream */
+            color: #1e1b18;
+        }
+        
+        .tree-line {
+            position: absolute;
+            background-color: #894e47; /* Muted Mahogany / surface-tint */
+            opacity: 0.4;
+        }
+
+        .member-card {
+            background-color: #FFFFFF;
+            border: 1px solid rgba(74, 28, 23, 0.1); /* Mahogany at 10% */
+            box-shadow: 0 4px 12px rgba(74, 28, 23, 0.05); /* Soft ambient shadow */
+            transition: all 0.2s ease-in-out;
+        }
+
+        .member-card:hover {
+            border-color: rgba(74, 28, 23, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .primary-btn {
+            background-color: #4a1c17; /* Mahogany */
+            color: #ffffff;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.2); /* Beveled paper edge */
+        }
+        
+        .badge {
+            background-color: #1f2e1d; /* Forest Green / tertiary-container */
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container w-full top-0 sticky border-b border-outline-variant/10 shadow-sm shadow-[0_4px_12px_rgba(74,28,23,0.05)] z-50">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
+<!-- Brand -->
+<div class="font-display-lg text-display-lg font-bold text-primary dark:text-primary-fixed">Family Tree Website</div>
+<!-- Navigation Links (Web) -->
+<nav class="hidden md:flex gap-8 items-center h-full">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary pb-1 flex flex-col h-full justify-center" href="#">Branches</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 cursor-pointer active:opacity-80 flex flex-col h-full justify-center" href="#">Generations</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 cursor-pointer active:opacity-80 flex flex-col h-full justify-center" href="#">Archive</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 cursor-pointer active:opacity-80 flex flex-col h-full justify-center" href="#">Timeline</a>
+</nav>
+<!-- Trailing Actions -->
+<div class="flex gap-4 items-center">
+<button aria-label="account_tree" class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">account_tree</span>
+</button>
+<button aria-label="history" class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">history</span>
+</button>
+<button aria-label="settings" class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">settings</span>
+</button>
+<img alt="User profile" class="w-10 h-10 rounded-full object-cover ml-2 border border-outline-variant/30" data-alt="A small, circular avatar portrait of a dignified older gentleman with silver hair, wearing a tailored vintage tweed suit, set against a warm, softly lit parchment-colored background. The style is classic, timeless, and sophisticated, perfectly suited for a high-end genealogical archive profile picture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh4-uIg4GUoqPdlDkLIi9sCPET_ifT8erITrTodOpUvsqpgUw6b9yg_hWmgtm_MjYqiaE_7xMJ-tcae12yYfBWxiH9fDeuT8JApQo1KA6jnlixLM_2N9F5NUI41xDIbHy4eXjXd5ey1jFGnyYt1Ijg56OPoM3GJzoHxODUVW5kP68YsI6xtBbGT0dTciiEyYdMV2vEPrfCnLJOqoQdYvoznyj_VJRonjdkByY87CU3kHwZ585NYMMectIZiL59RLLA-NLbk4WBtjV7IQ">
+</div>
+</div>
+</header>
+<div class="flex flex-1">
+<!-- Main Content -->
+<main class="flex-1 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 flex flex-col gap-16 relative">
+<!-- Hero Section -->
+<section class="w-full flex flex-col items-center justify-center text-center gap-6 py-12 relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/20 p-8 shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-multiply pointer-events-none" data-alt="A wide, sweeping, high-quality, sepia-toned historical family portrait from the early 1900s. A large extended family is posed formally in front of a grand, ivy-covered stone manor house. The lighting is soft and natural, emphasizing the texture of their vintage clothing and the architectural details. The mood is nostalgic, reverent, and monumental, capturing a profound sense of legacy and generations past within a sophisticated, timeless aesthetic." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAgzco5rSNcpaiLArXfNl4C19Xa73hEQL3DFxNfH51XqMHCeAE2LIHb2VvQS4hRhtvjrFdqMG2vmXF6hhp-54FyvuScrJAorSu49CRPizGoPWAOfi3n9F4dgzVvDvRhXQh8SpDdic1ZaQbMDjLqWLR26sCCHUWT-AiZkaq9GKvfM7zycJcKj36JpcGQYXITmFtNsCtkJ3gTPdOhcSnaHhOu-dpZpdxX3OfGyeTaZuLWIumM15guulzdCiA5LhDJJCbimHcZ0vc5tgQ&quot;);"></div>
+<div class="relative z-10 max-w-2xl flex flex-col items-center gap-4">
+<h1 class="font-display-lg text-display-lg text-primary">AGUSTIN FAMILY</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">The roots of the Family treebegin with the love</p><div><br></div><p></p>
+
+</div>
+</section>
+<!-- Tree Section (Horizontal Layout) -->
+<section class="w-full py-8 overflow-x-auto">
+<div class="min-w-[1000px] flex flex-col items-center gap-16 relative pb-12">
+<!-- Generation 1: Grandparents -->
+<div class="w-full flex justify-between px-24 relative z-10">
+<!-- Paternal Grandparents -->
+<div class="flex gap-8 relative">
+<!-- Line connecting couple -->
+<div class="tree-line h-[2px] w-16 top-1/2 left-[calc(50%-32px)]"></div>
+<!-- Grandfather -->
+
+<!-- Grandmother -->
+
+</div>
+<!-- Maternal Grandparents -->
+<div class="flex gap-8 relative">
+<!-- Line connecting couple -->
+<div class="tree-line h-[2px] w-16 top-1/2 left-[calc(50%-32px)]"></div>
+<!-- Grandfather -->
+
+<!-- Grandmother -->
+
+</div>
+</div>
+<!-- Connection Lines from Gen 1 to Gen 2 -->
+<!-- Paternal Drop -->
+<div class="tree-line w-[2px] h-16 top-[220px] left-[25%]"></div>
+<!-- Maternal Drop -->
+<div class="tree-line w-[2px] h-16 top-[220px] left-[75%]"></div>
+<!-- Generation 2: Parents & Aunts/Uncles -->
+<div class="w-full flex justify-around px-8 relative z-10 pt-4">
+<!-- Paternal Uncle -->
+
+<!-- Father -->
+<div class="member-card w-48 rounded-lg overflow-hidden flex flex-col items-center p-4 relative">
+<!-- Line connecting parents -->
+<div class="tree-line h-[2px] w-24 top-1/2 -right-20 z-[-1]"></div>
+<img alt="Father" class="w-24 h-24 rounded-full object-cover mb-4 border border-outline-variant/30" data-alt="A formal mid-century photograph of a handsome man in his thirties, wearing a smart tweed jacket. He looks thoughtfully off-camera. The lighting is soft and studio-quality, with a warm, nostalgic color palette that complements the parchment background of the genealogical interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_j4iwxFyK_XQ2p9ztaOwZz0M9UUa6AhGFsexEYq0ymSOKTHKWSd0svw_Av-4A87FkmixsVY8rXJ0jkUau1NkTaZkDO3C7HiZCqooGI_rXXbM5--fYCTDsfUVlNAx89nNKTbD1_vuKgeKMi4xqSII0-NBoK7LKXtremR1aCXnbG7pQMdIR2VftDrkymB4mutWpAt2Ao4PsX-gpuhuyNIrIr621UBCLIkXWxC5wLRbdDmqFrZkekirY6TXtET6YfOzDLGl-jzWHx0Y4yQ">
+<h3 class="font-headline-md text-[20px] text-primary text-center leading-tight mb-1">Agustin, Ethel Bert&nbsp;</h3>
+<p class="font-label-md text-label-md text-on-surface-variant text-center"><br></p>
+<span class="badge px-2 py-1 rounded-full font-label-sm text-label-sm mt-3 uppercase tracking-wider">Father</span>
+</div>
+<!-- Mother -->
+<div class="member-card w-48 rounded-lg overflow-hidden flex flex-col items-center p-4 relative">
+<img alt="Mother" class="w-24 h-24 rounded-full object-cover mb-4 border border-outline-variant/30" data-alt="A beautiful 1950s portrait of a woman with styled, shoulder-length hair and a patterned silk scarf. She looks directly at the camera with a warm smile. The image has a subtle vintage texture, reinforcing the sophisticated, historical aesthetic of the family archive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Vv2vXJtZWVYJJdNHvI1fAYRRv5E0VRqZwBI353HuVRwZu285ExbXliratMgK4uKRH2eZl0OytSMaCoKg2ZnHgDoJ1laJStXIRwFezb-vlxq005XASvBDvjYEaHjqhQ2m1wPPMb6ctHsLVQE0V2UZNRRAkFp0L5QgxximhhFdqSWTUpwxiSC_oAUSMNiNDtBIErIAcL7C3a2tmVUk8rXfMgS8aIbiSi-NOicDIdKFaIydnGkVJPwe0yM8rt9P0EylyODZgbbKUwsxhA">
+<h3 class="font-headline-md text-[20px] text-primary text-center leading-tight mb-1">Marissa Garcia Agustin</h3>
+<p class="font-label-md text-label-md text-on-surface-variant text-center"><br></p>
+<span class="badge px-2 py-1 rounded-full font-label-sm text-label-sm mt-3 uppercase tracking-wider">Mother</span>
+</div>
+<!-- Maternal Aunt -->
+
+</div>
+<!-- Connection Lines from Gen 2 to Gen 3 -->
+<!-- Main Branch Drop -->
+<div class="tree-line w-[2px] h-16 top-[540px] left-[50%]"></div>
+<!-- Sibling horizontal spread -->
+<div class="tree-line h-[2px] w-[600px] top-[580px] left-[calc(50%-300px)]"></div>
+<!-- Sibling vertical drops -->
+<div class="tree-line w-[2px] h-8 top-[580px] left-[calc(50%-300px)]"></div>
+<div class="tree-line w-[2px] h-8 top-[580px] left-[calc(50%-100px)]"></div>
+<div class="tree-line w-[2px] h-8 top-[580px] left-[calc(50%+100px)]"></div>
+<div class="tree-line w-[2px] h-8 top-[580px] left-[calc(50%+300px)]"></div>
+<!-- Generation 3: Me & Siblings / Cousins -->
+<div class="w-full flex justify-center gap-8 relative z-10 pt-8">
+<!-- Cousin (Paternal) -->
+
+<!-- Sibling -->
+<div class="member-card w-48 rounded-lg overflow-hidden flex flex-col items-center p-4">
+<img alt="Sister" class="w-24 h-24 rounded-full object-cover mb-4 border border-outline-variant/30" data-alt="A bright, late 20th-century portrait of a young woman smiling warmly, wearing a simple cardigan. The image quality is crisp, reflecting a more recent era, while the soft background ensures it fits seamlessly into the premium, document-like presentation of the family tree." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwjVvOngonFL3MkEJ_I6X_mtHn7ssMV_VwioYfwTcQJAwaIfbMxke3RJv15Gi9W0egzx7aJaj79AqGOYzMyctmiJc14WQRXILSdIU9xgVr8IHNT8JtqqhSbAWhHgIOpgDYBfdhBh6BAuQkWYTabSDYrFo9AgtvMLdpvkGwEgwup8d_fcDhY2kn4I3HcTI2Cgse8XTVhbNYYW1GTctFz1F4uXjIpRsBv3oLdM0AduB34AQIcF100apz5dQcdk6m5x_DOMFUCoQV4ekv-g">
+<h3 class="font-headline-md text-[20px] text-primary text-center leading-tight mb-1">Ethyl Mae Agustin</h3>
+<p class="font-label-md text-label-md text-on-surface-variant text-center"><br></p>
+<span class="badge px-2 py-1 rounded-full font-label-sm text-label-sm mt-3 uppercase tracking-wider">Sister</span>
+</div>
+<!-- Me -->
+<div class="member-card w-48 rounded-lg overflow-hidden flex flex-col items-center p-4 border-2 border-primary shadow-[0_0_15px_rgba(74,28,23,0.15)] relative scale-105">
+<img alt="Self" class="w-24 h-24 rounded-full object-cover mb-4 border border-primary/50" data-alt="A contemporary, high-quality portrait of a person in their fifties, looking directly at the camera with a confident, welcoming expression. The lighting is professional and clear. This serves as the focal point of the current generation in the sophisticated genealogical UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyiEL27ESsv7u5tRGAgxZ8OveQJ8Us31mnwZDouX8MHc7iV0y1xcY5OZFUJaFU8RvLxKA3xV_aCuQ8RLs5Cv2YTwh12B78Ig8wjFUlTlY4x0edy5aBP7AA38HmXIIQTj1i1ANUFpTvPnBW7UpkBRzEeQ0qWdm13iZzmqO-oJTUMc4YwRwYJ0CyV0-AhT-y2HftwA-86h9ki7qgkQi07WyjaujdsRwMDefSOb3BdLh7Ky_OHePq_n06vYvSCd4o6D-Uibl5GFNjnVrG9w">
+<h3 class="font-headline-md text-[20px] text-primary text-center leading-tight mb-1">Ethel John Agustin</h3>
+<p class="font-label-md text-label-md text-on-surface-variant text-center"><br></p>
+<span class="badge bg-primary px-2 py-1 rounded-full font-label-sm text-label-sm mt-3 uppercase tracking-wider shadow-inner">You</span>
+</div><div class="member-card w-48 rounded-lg overflow-hidden flex flex-col items-center p-4">
+<img alt="Brother" class="w-24 h-24 rounded-full object-cover mb-4 border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzi9-RnzwZmrVNXntxkt5sSifpml6Njb-zQOHaDjbs_SQH1oe9TbAYGayUc3NNkOXZ81tfBiGVUdQWQHwcrAo1-84QemcyXCUgYibrJJsaZYrSyoccmj1cCqwEixYbJTGzrdu5HsjCk-qIIk1GjlVOYPoo6Owdyz8nhrv7Dp9Z7zF3vqX8QRy-_sUJWEpb_cSeLSbw5KbtDy8kS5eVQlbkaYSsx4faKWRJhZXL4_aNjKT2caHwyz_uh3sMjWr2Nv-su47XE-A-EEvZGg">
+<h3 class="font-headline-md text-[20px] text-primary text-center leading-tight mb-1">Ethel Mark Agustin</h3>
+<p class="font-label-md text-label-md text-on-surface-variant text-center"><br></p>
+<span class="badge px-2 py-1 rounded-full font-label-sm text-label-sm mt-3 uppercase tracking-wider">Brother</span>
+</div>
+<!-- Cousin (Maternal) -->
+
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container-highest dark:bg-tertiary-container border-t border-outline-variant/20 flex flex-col items-center py-12 px-margin-desktop gap-6">
+<div class="font-display-lg text-display-lg text-primary text-center">
+            Agustin Family Website</div>
+<div class="flex gap-6 font-label-sm text-label-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Family Guidelines</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Contact Archivist</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer" href="#">Terms of Service</a>
+</div>
+<div class="text-secondary dark:text-on-secondary-container font-body-md text-body-md text-center">
+            © Agustin Family Website. Preserving our family history for future generations.
+        </div>
+</footer>
+
+
+
+
+
+
+
+
+</body></html>
